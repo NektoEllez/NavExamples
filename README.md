@@ -1,38 +1,42 @@
 # NavExamples
 
-## SwiftUI Navigation for iOS 16+
+# Навигация в SwiftUI (iOS 16+)
 
-## Project Description
+Это небольшой проект, иллюстрирующий использование навигации в SwiftUI на iOS 16 и более поздних версиях.
 
-This project serves as an illustrative example of SwiftUI navigation in applications designed for iOS 16 and newer. SwiftUI introduces powerful tools for managing navigation and transitions between screens, and this project highlights their use cases.
+## Особенности
 
-## Key Features
+- В проекте используется `TabView` с двумя вкладками, чтобы демонстрировать различные типы навигации.
+- Первая вкладка (`Tab01`) содержит пример использования `NavigationLink` для перехода на другой экран.
+- Вторая вкладка (`Tab02`) демонстрирует более сложную навигацию с использованием `NavigationStack`, `NavigationLink` и кастомных представлений.
+- Проект также включает в себя пример использования `sheet` для отображения модальных окон.
 
-In this project, we showcase essential SwiftUI navigation concepts, including:
+## Как начать
 
-1. **NavigationView**: We employ `NavigationView` to establish a navigation stack and manage the flow between different screens.
+Чтобы запустить проект, выполните следующие шаги:
 
-2. **NavigationLink**: Using `NavigationLink`, we create interactive UI elements that enable users to navigate seamlessly to other screens.
-
-3. **@ViewBuilder**: The project demonstrates the versatility of `@ViewBuilder` in crafting UI components that gracefully adapt to various iOS versions, ensuring a consistent user experience.
-
-4. **@State**: We utilize `@State` to manage the state of specific UI elements, enabling dynamic updates and interactions.
-
-5. **@Environment**: The usage of `@Environment` showcases how to access shared data and settings across different parts of the app, enhancing code modularity.
-
-6. **Navigation Parameters**: Learn how to pass data between screens using various techniques such as `@Binding`, `@State`, and `@Environment`.
-
-## Prerequisites
-
-To run this project, you'll need:
-
-- Xcode 14 or later
-- iOS 16 or later
-
-## Getting Started
-
-1. Clone this repository to your local machine:
-
+1. Склонируйте репозиторий с помощью команды `git clone`:
+   
    ```bash
    git clone https://github.com/NektoEllez/NavExamples.git
 
+
+2. Откройте проект в Xcode и запустите его на симуляторе или устройстве с iOS 16 или более поздней версией.
+
+## Использование навигации
+
+### Переход по кнопке
+
+На первой вкладке (`Tab01`) вы можете увидеть кнопку "Hello, world!". При нажатии на нее происходит переход на другой экран.
+
+### Сложная навигация
+
+Вторая вкладка (`Tab02`) демонстрирует более сложную навигацию:
+
+- Используется `NavigationStack` для управления стеком представлений.
+- Для перехода между представлениями используются `NavigationLink`.
+- Для отображения модального окна используется `sheet`.
+
+## Зависимости
+
+Проект не имеет дополнительных зависимостей и предназначен исключительно для демонстрации навигации в SwiftUI.
