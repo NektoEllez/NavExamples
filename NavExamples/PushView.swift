@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct PushView: View {
+    
+    var user = User()
+    
+    @State var isPresented = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            HStack(alignment: .center, spacing: 20) {
+                Text(user.firstName)
+                Text(user.lastName)
+                Button("Present") {
+                    isPresented = true
+                }.colorMultiply(.green)
+            }
+            .font(.system(size: 22, weight: .bold))
+            .foregroundColor(.white)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.black)
+            .sheet(isPresented: $isPresented) {
+                SheetView()
+            }
     }
 }
 
